@@ -1,0 +1,12 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "protein-tracker"
+s3_bucket = "protein-tracker-sherri-20240101"  # Use the bucket name you created
+s3_prefix = "protein-tracker"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "Stage=dev"
+resolve_s3 = false
